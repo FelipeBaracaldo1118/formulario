@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA DOM</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body >
+    <section id="registro-form">
+        <h2>Formulario de Registro</h2>
+        <form action="" id="formulario" novalidate>
+           <label for="name">Nombre:</label>
+           <input type="text" name="name" id="name" min="3" max="20" required autocomplete="off">
+           <div class="error" id="errorName"></div>
+
+           <label for="apellido">Apellido:</label>
+           <input type="text" name="apellido" id="apellido" min="3" max="20" required autocomplete="off">
+           <div class="error" id="errorApellido"></div>
+
+           <label for="documento">Documento:</label>
+           <input type="text" name="documento" id="documento" min="3" max="20" required autocomplete="off">
+           <div class="error" id="errorDocumento"></div>
+
+           <label for="email">email:</label>
+           <input type="email" name="email" id="email"  required autocomplete="off">
+           <div class="error" id="errorEmail"></div>
+
+           <label for="edad">Edad</label>
+           <input type="number" name="edad" id="edad"  required autocomplete="off">
+           <div class="error" id="errorEdad"></div>
+
+           <label for="actividad"> Actividad:</label>
+           <select name="actividad" id="actividad" required >
+            <option value="">Seleccione...</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="Mercadeo">Mercadeo</option>
+            <option value="Venta">Venta</option>
+            <option value="Psicologo">Psicologo</option>
+           </select >
+           <div class="error" id="errorActividad"></div>
+
+           <label for="estudios">Estudios:</label>
+           <select name="estudios" id="estudios" required>
+            <option value="">Seleccione...</option>
+            <option value="Primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+            <option value="Universidad">Universidad</option>
+            <option value="Maestria">Maestria</option>
+           </select>
+           <div class="error" id="errorEstudios"></div>
+
+           <label class="inline">
+            <input type="checkbox" name="aceptoTerminos" id="aceptoTerminos" required>
+            Acepto terminos y condiciones
+           </label>
+           <div class="error" id="errorAceptoTerminos"></div>
+
+           <label  class="inline">Publicidad</label>
+           <input type="checkbox" name="publicidad" id="ofertas" value="ofertas">
+           <label for="ofertas" class="inline">Ofertas</label>
+           <input type="checkbox" name="publicidad" id="novedades" value="novedades">
+           <label for="novedades" class="inline">Novedades</label>
+           <div class="error" id="errorPublicidad"></div>
+
+           <input type="submit"  value="Registrate">
+        </form>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
